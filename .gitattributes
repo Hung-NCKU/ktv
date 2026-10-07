@@ -1,0 +1,10 @@
+# 三個 .bat 啟動器以系統原生編碼（cp950 / Big5）儲存，不是 UTF-8。
+# 原因見 docs/TUTORIAL.md 第 5.6(b) 節：在批次檔裡用 chcp 切換編碼會讓
+# cmd.exe 的位元組讀取位置錯位，整個腳本解析失敗。
+# 標成 binary 讓 git 完全不要改動它們（包含行尾正規化）。
+*.bat -text
+
+*.py text eol=lf
+*.md text eol=lf
+*.txt text eol=lf
+*.json text eol=lf

@@ -1,0 +1,26 @@
+{
+  "_comment": "程式會自動產生並維護 config.json，這個檔案只是格式範例。裝置 id 是 Windows 的 WASAPI 識別字串，每台機器都不同，不要直接複製。",
+
+  "mic_id": "{0.0.1.00000000}.{00000000-0000-0000-0000-000000000000}",
+  "mic_name": "你的麥克風名稱",
+  "loopback_id": "{0.0.0.00000000}.{00000000-0000-0000-0000-000000000000}",
+  "loopback_name": "你的輸出裝置名稱",
+
+  "mic_gain_db": 0.0,
+  "sys_gain_db": 0.0,
+
+  "mic_offset_ms": 0.0,
+  "mic_offset_by_device": {
+    "{0.0.0.00000000}.{00000000-0000-0000-0000-000000000000}": -64.0
+  },
+
+  "samplerate": 48000,
+  "pull_frames": 4800,
+  "buffer_frames": 48000,
+
+  "out_dir": "recordings",
+  "keep_stems": true,
+  "normalize": true,
+  "export_format": "wav",
+  "mp3_bitrate": "320k"
+}
